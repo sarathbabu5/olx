@@ -11,7 +11,7 @@ const Home = () => {
     try {
       loadingTrue();
 
-      const res = await axios.get("http://localhost:3000/products");
+      const res = await axios.get("https://db-lygu.onrender.com/products");
       // console.log(res);
       setData(res.data);
       loadingFalse();

@@ -20,7 +20,7 @@ const ProductDetailsPage = () => {
   async function fetchingData(param) {
     try {
       let response = await axios.get(
-        `http://localhost:3000/products/${param.id}`
+        `https://db-lygu.onrender.com/products/${param.id}`
       );
       //   let data = await response.json();
       console.log(response);
